@@ -1,15 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+
 
 body {
-    font-size: 100%;
-    background: linear-gradient(68.15deg, #dbdbdb 16.62%, #e7e4e4 85.61%);
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    color: #000000
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #ffff
+}
+
+.cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background-color: #ece7d5
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backdrop-size: cover;
+    -moz-background-size: cover;
+    -o-backface-size: cover;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
+}
+
+section.module.parallax-1 {
+    background-image: url(./assets/iStock-1357020474-scaled.jpg);
+}
+
+section.module.parallax-2 {
+    background-image: url(./assets/code.jpg);
+}
+
+section.module.parallax-3 {
+    background-image: url(./assets/codeheader.jpg);
+}
+
+section.module.parallax h1 {
+    color: #ffff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+.area-1,
+.area-2,
+.area-3 {
+    visibility: hidden;
 }
 
 ul {
@@ -17,13 +117,6 @@ ul {
     display: flex;
     justify-content: space-around;
 }
-
-p {
-    text-align: center;
-    color: aliceblue;
-    line-height: 14px;
-}
-
 
 .container {
     display: flex;
@@ -65,17 +158,12 @@ p {
     left: 0px;
     width: 0px;
     height: 5px;
-    background: rgba(112, 2, 175, 0.486);
+    background: rgba(19, 1, 176, 0.486);
     transition: all, 1s;
 }
 
 .efeito-1:hover:before {
     width: 95%;
-}
-
-.content {
-    margin-bottom: 78px;
-    border-top: 0.4px solid #000000;
 }
 
 .content-main {
@@ -85,23 +173,10 @@ p {
     justify-content: space-around;
 }
 
-.content-main-typed {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
 .content-secundary-image {
     display: flex;
     align-items: center;
     height: 50%;
-}
-
-
-.content-main-type-caption {
-    font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
 }
 
 .content-main-type-caption-icon {
@@ -157,7 +232,7 @@ p {
 
 .content-main-type-caption-button:hover {
     background: rgba(0, 0, 0, 0);
-    color: #6d009c;
+    color: #bb94cc;
     box-shadow: inset 0px 0px 0px 3px #6d009c;
 }
 
