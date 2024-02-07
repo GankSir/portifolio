@@ -1,0 +1,20 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "Projeto pessoal criando meu próprio portfólio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GankSir/portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GankSir/portifolio/issues"
+  },
+  "homepage": "https://github.com/GankSir/portifolio#readme"
+}
