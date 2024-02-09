@@ -101,7 +101,8 @@ section.module.parallax-3 {
 }
 
 section.module.parallax-4 {
-    background-image: url(./assets/desktop-wallpaper-qa-testing-software-testing\ \(1\).jpg);
+    width: auto;
+    background-image: url(./assets/eu.jpg);
 }
 
 section.module.parallax h1 {
@@ -150,6 +151,7 @@ section.module.parallax h1 {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: 5px;
 }
 
 .caixao .card .contendo {
@@ -176,13 +178,13 @@ section.module.parallax h1 {
 
 .caixao .card .contendo h3 {
     font-size: 1.8em;
-    color: #fff;
+    color: #242424;
     z-index: 1;
 }
 
 .caixao .card .contendo p {
     font-size: 1em;
-    color: #fff;
+    color: #242424;
     z-index: 300;
 }
 
