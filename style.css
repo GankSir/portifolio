@@ -86,6 +86,8 @@ section.module.parallax:after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%)
 }
 
+
+
 section.module.parallax-1 {
     background-image: url(./assets/iStock-1357020474-scaled.jpg);
 }
@@ -96,6 +98,10 @@ section.module.parallax-2 {
 
 section.module.parallax-3 {
     background-image: url(./assets/codeheader.jpg);
+}
+
+section.module.parallax-4 {
+    background-image: url(./assets/desktop-wallpaper-qa-testing-software-testing\ \(1\).jpg);
 }
 
 section.module.parallax h1 {
@@ -110,6 +116,87 @@ section.module.parallax h1 {
 .area-2,
 .area-3 {
     visibility: hidden;
+}
+
+.ccard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ece7d5
+}
+
+.caixao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.caixao .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.caixao .card .contendo {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.caixao .card:hover .contendo {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.caixao .card .contendo h2 {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    font-size: 8em;
+    color: #000;
+    pointer-events: none;
+}
+
+.caixao .card .contendo h3 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.caixao .card .contendo p {
+    font-size: 1em;
+    color: #fff;
+    z-index: 300;
+}
+
+.caixao .card .contendo a {
+    position: relative;
+    display: inline;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
 }
 
 ul {
@@ -275,15 +362,6 @@ ul {
     border-radius: 50px;
 }
 
-.team {
-    display: flex;
-    justify-content: center;
-    border-top: 0.4px solid #960cd6;
-    padding-top: 48px;
-    margin-top: 150px;
-}
-
-
 .image-box-round {
     height: 100px;
     height: 100px;
@@ -323,7 +401,7 @@ ul {
 }
 
 .image-box-button-primary:after {
-    border: solid black;
+    border: solid rgb(0, 0, 0);
     top: -100%;
     left: 0px;
     width: 100%;
@@ -400,6 +478,7 @@ ul {
 .baseboard {
     max-width: 100%;
     max-height: 350px;
+    color: #960cd6;
 
 }
 
